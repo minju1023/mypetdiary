@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="750.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="267.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="99.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="pImgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cat_3775226.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="pBtnImgRegister" mnemonicParsing="false" text="이미지 등록">
+                     <VBox.margin>
+                        <Insets top="9.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="334.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="440.0" prefWidth="435.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="147.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="288.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <TextField fx:id="pTxtName" prefHeight="29.0" prefWidth="222.0" promptText="이름" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="이름" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="생년월일" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TextField fx:id="pTxtBirth" prefWidth="222.0" promptText="20190101" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="성별" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="288.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <ComboBox fx:id="pCmbGender" prefWidth="222.0" promptText="성별" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                           <children>
+                              <Label text="반려동물 종류" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <ComboBox fx:id="pCmbKind" prefWidth="222.0" promptText="종류" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+                           <children>
+                              <Label text="기초예방접종 여부" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <ComboBox fx:id="pCmbVaccine" prefWidth="222.0" promptText="예방접종여부" />
+                           </children>
+                           <GridPane.margin>
+                              <Insets top="10.0" />
+                           </GridPane.margin>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="107.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="pBtnSave" mnemonicParsing="false" prefWidth="315.0" text="저장하기" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

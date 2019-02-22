@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="750.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RootController">
+   <center>
+      <GridPane prefHeight="750.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="btnLogin" layoutX="57.0" layoutY="191.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="315.0" text="로그인" />
+                  <Button fx:id="btnJoin" layoutX="57.0" layoutY="302.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="315.0" text="아직 회원이 아니신가요? 회원가입" />
+                  <TextField fx:id="txtId" layoutX="57.0" layoutY="-12.0" prefWidth="315.0" promptText="아이디(이메일)" />
+                  <Separator layoutX="56.0" layoutY="33.0" prefHeight="5.0" prefWidth="315.0" />
+                  <PasswordField fx:id="txtPassWord" layoutX="57.0" layoutY="52.0" prefWidth="315.0" promptText="비밀번호" />
+                  <Button fx:id="btnFindId" layoutX="169.0" layoutY="87.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: rgbs(0,0,0,0);" text=" ID 찾기 ┃" />
+                  <Button fx:id="btnFindPassWord" layoutX="255.0" layoutY="87.0" mnemonicParsing="false" style="-fx-background-color: rgbs(0,0,0,0);" text="비밀번호 찾기" />
+              <!--     <Label fx:id="labErrorMessage" layoutX="213.0" layoutY="142.0" /> -->
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="imgViewLogo" fitHeight="182.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Pets_3775229.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="PetDiary" textOverrun="CLIP">
+                           <font>
+                              <Font name="Candara" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

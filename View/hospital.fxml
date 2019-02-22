@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HospitalController">
+   <children>
+      <HBox alignment="CENTER" layoutY="141.0" prefHeight="387.0" prefWidth="1000.0">
+         <children>
+            <TableView fx:id="hTableView" prefHeight="387.0" prefWidth="957.0">
+              <columns>
+                <TableColumn prefWidth="60.0" text="번호" />
+                <TableColumn prefWidth="132.0" text="인허가날짜" />
+                  <TableColumn prefWidth="108.0" text="전화번호" />
+                  <TableColumn minWidth="0.0" prefWidth="158.0" text="병원명" />
+                  <TableColumn prefWidth="236.0" text="지번주소" />
+                  <TableColumn minWidth="0.0" prefWidth="253.0" text="도로명주소" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Button fx:id="hBtnSearchByRegion" layoutX="882.0" layoutY="57.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="95.0" text="지역별검색" />
+      <ComboBox fx:id="hCmbRegion" layoutX="718.0" layoutY="58.0" prefHeight="29.0" prefWidth="155.0" promptText="지역선택" />
+      <ImageView fitHeight="127.0" fitWidth="123.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pethospital_512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="135.0" layoutY="58.0" text="hospital List">
+         <font>
+            <Font name="Candara" size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hTxtHospitalName" layoutX="718.0" layoutY="95.0" prefHeight="29.0" prefWidth="155.0" promptText="병원명" />
+      <Button fx:id="hBtnSearch" layoutX="882.0" layoutY="96.0" mnemonicParsing="false" text="병원명검색" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NoteController">
+   <children>
+      <HBox alignment="CENTER" layoutY="99.0" prefHeight="77.0" prefWidth="435.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pet_food_3775243.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="13.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="dTxtMeal" prefHeight="36.0" prefWidth="244.0" promptText="식사량을 기록해주세요">
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Separator layoutX="49.0" layoutY="177.0" prefWidth="340.0" />
+      <TextField fx:id="dTxtPee" layoutX="145.0" layoutY="189.0" prefHeight="20.0" prefWidth="244.0" promptText="소변" />
+      <ImageView fitHeight="69.0" fitWidth="73.0" layoutX="57.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/bath-restroom-512.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="dCmbPoo" layoutX="145.0" layoutY="225.0" prefWidth="244.0" promptText="대변" />
+      <ComboBox fx:id="dCmbBrush" layoutX="145.0" layoutY="293.0" prefHeight="35.0" prefWidth="244.0" promptText="양치여부" />
+      <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="52.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/playing.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="dTxtPlay" layoutX="145.0" layoutY="376.0" prefHeight="35.0" prefWidth="244.0" promptText="산책,교감,놀아주기" />
+      <Separator layoutX="49.0" layoutY="271.0" prefWidth="340.0" />
+      <Separator layoutX="49.0" layoutY="357.0" prefWidth="340.0" />
+      <Separator layoutX="49.0" layoutY="430.0" prefWidth="340.0" />
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="48.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/pethospital_512.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="dTxtMemo" layoutX="145.0" layoutY="443.0" prefHeight="95.0" prefWidth="244.0" promptText="진료내용 &amp; 메모" />
+      <Button fx:id="dBtnClear" layoutX="54.0" layoutY="575.0" mnemonicParsing="false" prefWidth="150.0" text="초기화" />
+      <Button fx:id="dBtnSave" layoutX="239.0" layoutY="575.0" mnemonicParsing="false" prefWidth="150.0" text="저 장" />
+      <ImageView fitHeight="77.0" fitWidth="69.0" layoutX="53.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/images/Toothbrush-512.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="dDatePicker" layoutX="239.0" layoutY="52.0" prefHeight="29.0" prefWidth="150.0" promptText="기록일" />
+   </children>
+</AnchorPane>

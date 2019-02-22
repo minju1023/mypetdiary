@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="705.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="59.0" prefWidth="159.0" text="MY PAGE">
+               <font>
+                  <Font name="Candara Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="155.0" prefWidth="435.0">
+               <children>
+                  <Button fx:id="mBtnProfile" mnemonicParsing="false" prefHeight="144.0" prefWidth="255.0" text="프로필등록">
+                     <graphic>
+                        <ImageView fitHeight="118.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dog_3775255.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="155.0" prefWidth="435.0">
+               <children>
+                  <Button fx:id="mBtnDiary" mnemonicParsing="false" prefHeight="144.0" prefWidth="255.0" text="    다이어리">
+                     <graphic>
+                        <ImageView fitHeight="103.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/diary-512.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="150.0" prefWidth="435.0">
+               <children>
+                  <Button fx:id="mBtnHospital" mnemonicParsing="false" prefHeight="144.0" prefWidth="255.0" text="병원검색">
+                     <graphic>
+                        <ImageView fitHeight="117.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/hospital_pet_3775254.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="150.0" prefWidth="435.0">
+               <children>
+                  <Button fx:id="mBtnFeed" mnemonicParsing="false" prefHeight="144.0" prefWidth="255.0" text="사료정보">
+                     <graphic>
+                        <ImageView fitHeight="115.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pet_food_3775243.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="mImgViewBack" fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="-29.0" left="9.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

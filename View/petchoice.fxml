@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="221.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="145.0" layoutY="10.0" text="동물을 선택해주세요." />
+      <TableView id="pChoiceTableView" layoutX="45.0" layoutY="37.0" prefHeight="127.0" prefWidth="345.0">
+        <columns>
+          <TableColumn text="종류" />
+          <TableColumn text="이름" />
+            <TableColumn text="성별" />
+            <TableColumn text="생일" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="164.0" prefHeight="85.0" prefWidth="400.0">
+         <children>
+            <Button id="pChoiceOk" mnemonicParsing="false" text="확인" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

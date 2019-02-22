@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="750.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.JoinController">
+	<top>
+		<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<Label text="회원가입" />
+			</children>
+		</HBox>
+	</top>
+	<center>
+		<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+			<children>
+				<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+					<children>
+						<AnchorPane prefHeight="159.0" prefWidth="435.0">
+							<children>
+								<TextField fx:id="jTxtEmail" layoutX="57.0" layoutY="27.0" prefHeight="29.0" prefWidth="192.0" promptText="이메일(아이디)" />
+								<PasswordField fx:id="jTxtPassWord" layoutX="57.0" layoutY="97.0" prefWidth="315.0" promptText="비밀번호" />
+								<Label layoutX="57.0" layoutY="68.0" text="비밀번호(숫자 8자리로 제한됩니다.)" />
+								<Label layoutX="57.0" layoutY="-4.0" text="아이디" />
+                        <Button fx:id="jBtnCheck" layoutX="256.0" layoutY="27.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="115.0" text="중복확인" />
+							</children>
+						</AnchorPane>
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0">
+					<children>
+						<AnchorPane prefHeight="207.0" prefWidth="435.0">
+							<children>
+								<PasswordField fx:id="jTxtPassWordOk" layoutX="57.0" layoutY="18.0" prefHeight="29.0" prefWidth="192.0" promptText="비밀번호 확인" />
+								<Separator layoutX="57.0" layoutY="64.0" prefHeight="8.0" prefWidth="315.0" />
+                        <Button fx:id="jBtnPwCheck" layoutX="257.0" layoutY="18.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="115.0" text="비밀번호확인" />
+							</children>
+						</AnchorPane>
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0">
+					<children>
+						<AnchorPane prefHeight="236.0" prefWidth="435.0">
+							<children>
+								<Label layoutX="57.0" layoutY="5.0" text="보호자 정보를 입력해주세요." />
+								<TextField fx:id="jTxtName" layoutX="57.0" layoutY="36.0" prefWidth="315.0" promptText="이름" />
+								<TextField fx:id="jTxtBirth" layoutX="57.0" layoutY="84.0" prefWidth="315.0" promptText="생년월일(20190101)" />
+							</children>
+						</AnchorPane>
+					</children>
+				</HBox>
+				<AnchorPane prefHeight="294.0" prefWidth="435.0">
+					<children>
+						<Label layoutX="57.0" layoutY="25.0" text="성별" />
+						<Label layoutX="207.0" layoutY="25.0" text="닉네임" />
+						<TextField fx:id="jTxtNickName" layoutX="198.0" layoutY="52.0" prefHeight="29.0" prefWidth="172.0" />
+						<TextField fx:id="jTxtPhone" layoutX="57.0" layoutY="166.0" prefWidth="315.0" promptText="연락처(-는 생략해주세요.)" />
+						<Label layoutX="57.0" layoutY="131.0" text="연락처(-는 생략해주세요.)" />
+						<Label layoutX="207.0" layoutY="81.0" text="최대 7자, 특수문자 불가" />
+						<ComboBox fx:id="jCmbGender" layoutX="55.0" layoutY="52.0" prefHeight="29.0" prefWidth="134.0" promptText="성별" />
+					</children>
+				</AnchorPane>
+				<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+					<children>
+						<Button fx:id="jBtnRegister" mnemonicParsing="false" prefWidth="315.0" text="완료" />
+					</children>
+				</VBox>
+			</children>
+		</VBox>
+	</center>
+</BorderPane>

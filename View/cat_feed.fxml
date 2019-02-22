@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CatfeedController">
+   <children>
+      <HBox alignment="CENTER" layoutX="4.0" layoutY="127.0" prefHeight="423.0" prefWidth="993.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="472.0" prefWidth="191.0">
+               <children>
+                  <ImageView fx:id="feedImag" fitHeight="170.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="-1.0" left="-2.0" top="80.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../images/dish.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <TableView fx:id="feedTableView" prefHeight="433.0" prefWidth="764.0">
+              <columns>
+                  <TableColumn prefWidth="190.0" text="제품명" />
+                <TableColumn text="조단백" />
+                <TableColumn text="조지방" />
+                  <TableColumn prefWidth="70.0" text="조섬유" />
+                  <TableColumn text="조회분" />
+                  <TableColumn text="탄수화물" />
+                  <TableColumn text="열량" />
+                  <TableColumn text="생산지" />
+              </columns>
+               <HBox.margin>
+                  <Insets left="8.0" right="36.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+      <ImageView fitHeight="119.0" fitWidth="119.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pet_food_3775243.png" />
+         </image></ImageView>
+      <Label layoutX="193.0" layoutY="48.0" text="feed List">
+         <font>
+            <Font name="Candara Bold" size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="feedTxtSearch" layoutX="741.0" layoutY="70.0" prefHeight="36.0" prefWidth="167.0" promptText="사료명검색" />
+      <Button fx:id="feedBtnSearch" layoutX="916.0" layoutY="70.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="38.0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/magnifying-glass-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ComboBox fx:id="feedPetKind" layoutX="563.0" layoutY="70.0" prefHeight="36.0" prefWidth="167.0" promptText="동물종류" />
+   </children>
+</AnchorPane>

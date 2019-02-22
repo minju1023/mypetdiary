@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="435.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Controller.DiaryController">
+	<children>
+		<TabPane prefHeight="750.0" prefWidth="435.0"
+			tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="체중관리">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<HBox layoutY="5.0" prefHeight="170.0" prefWidth="193.0">
+									<children>
+										<ImageView fitHeight="164.0" fitWidth="166.0"
+											pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../images/cat_3775226.png" />
+											</image>
+										</ImageView>
+									</children>
+									<padding>
+										<Insets left="10.0" />
+									</padding>
+								</HBox>
+								<TextField fx:id="wTxtBirth" layoutX="211.0"
+									layoutY="74.0" prefHeight="32.0" prefWidth="179.0"
+									promptText="생일" />
+								<TextField fx:id="wTxtName" layoutX="211.0"
+									layoutY="34.0" prefHeight="29.0" prefWidth="90.0"
+									promptText="이름" />
+								<TextField fx:id="wTxtKind" layoutX="211.0"
+									layoutY="117.0" prefHeight="32.0" prefWidth="179.0"
+									promptText="종류" />
+								<Separator layoutX="33.0" layoutY="158.0"
+									prefHeight="4.0" prefWidth="360.0" />
+								<Separator layoutX="33.0" layoutY="217.0"
+									prefHeight="4.0" prefWidth="360.0" />
+								<Button fx:id="wBtnWeight" layoutX="147.0"
+									layoutY="170.0" mnemonicParsing="false" prefHeight="29.0"
+									prefWidth="125.0" style="-fx-background-color: rgbs(0,0,0,0);"
+									text="체중입력">
+									<graphic>
+										<ImageView fitHeight="29.0" fitWidth="26.0"
+											pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../images/scale_14_3872561.png" />
+											</image>
+										</ImageView>
+									</graphic>
+								</Button>
+								<LineChart layoutX="25.0" layoutY="226.0"
+									prefHeight="232.0" prefWidth="380.0">
+									<xAxis>
+										<CategoryAxis side="BOTTOM" />
+									</xAxis>
+									<yAxis>
+										<NumberAxis side="LEFT" />
+									</yAxis>
+								</LineChart>
+								<TableView layoutX="28.0" layoutY="481.0"
+									prefHeight="200.0" prefWidth="380.0">
+									<columns>
+										<TableColumn prefWidth="104.0" text="기록일자" />
+										<TableColumn prefWidth="164.0" text="체중" />
+										<TableColumn prefWidth="95.0" text="체중변화" />
+									</columns>
+								</TableView>
+								<Label layoutX="163.0" layoutY="449.0" text="체중 변화 현황" />
+								<TextField fx:id="wTxtGender" layoutX="304.0"
+									layoutY="34.0" prefHeight="29.0" prefWidth="85.0"
+									promptText="성별" />
+							</children>
+						</AnchorPane>
+
+					</content>
+				</Tab>
+				<Tab text="다이어리">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<GridPane layoutX="29.0" layoutY="115.0"
+									prefHeight="218.0" prefWidth="377.0"
+									style="-fx-grid-lines-visible: true;">
+									<columnConstraints>
+										<ColumnConstraints hgrow="SOMETIMES"
+											maxWidth="94.0" minWidth="10.0" prefWidth="50.0" />
+										<ColumnConstraints hgrow="SOMETIMES"
+											maxWidth="157.0" minWidth="10.0" prefWidth="50.0" />
+										<ColumnConstraints hgrow="SOMETIMES"
+											maxWidth="208.0" minWidth="10.0" prefWidth="50.0" />
+										<ColumnConstraints hgrow="SOMETIMES"
+											maxWidth="248.0" minWidth="10.0" prefWidth="50.0" />
+										<ColumnConstraints hgrow="SOMETIMES"
+											maxWidth="301.0" minWidth="10.0" prefWidth="50.0" />
+										<ColumnConstraints hgrow="SOMETIMES"
+											maxWidth="656.0" minWidth="10.0" prefWidth="50.0" />
+										<ColumnConstraints hgrow="SOMETIMES"
+											maxWidth="656.0" minWidth="10.0" prefWidth="50.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0"
+											prefHeight="40.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="40.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="40.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="40.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="40.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="40.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0"
+											prefHeight="40.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<HBox alignment="CENTER" prefHeight="100.0"
+											prefWidth="200.0">
+											<children>
+												<Label text="SUN" />
+											</children>
+										</HBox>
+										<HBox alignment="CENTER" prefHeight="100.0"
+											prefWidth="200.0" GridPane.columnIndex="1">
+											<children>
+												<Label text="MON" />
+											</children>
+										</HBox>
+										<HBox alignment="CENTER" prefHeight="100.0"
+											prefWidth="200.0" GridPane.columnIndex="2">
+											<children>
+												<Label text="TUE" />
+											</children>
+										</HBox>
+										<HBox alignment="CENTER" prefHeight="100.0"
+											prefWidth="200.0" GridPane.columnIndex="3">
+											<children>
+												<Label text="WED" />
+											</children>
+										</HBox>
+										<HBox alignment="CENTER" prefHeight="100.0"
+											prefWidth="200.0" GridPane.columnIndex="4">
+											<children>
+												<Label text="THU" />
+											</children>
+										</HBox>
+										<HBox alignment="CENTER" prefHeight="100.0"
+											prefWidth="200.0" GridPane.columnIndex="5">
+											<children>
+												<Label text="FRI" />
+											</children>
+										</HBox>
+										<HBox alignment="CENTER" prefHeight="100.0"
+											prefWidth="200.0" GridPane.columnIndex="6">
+											<children>
+												<Label text="SAT" />
+											</children>
+										</HBox>
+										<Button fx:id="btn00" mnemonicParsing="false"
+											prefHeight="29.0" prefWidth="55.0" GridPane.rowIndex="1" />
+										<Button fx:id="btn01" mnemonicParsing="false"
+											prefHeight="29.0" prefWidth="59.0" GridPane.columnIndex="1"
+											GridPane.rowIndex="1" />
+										<Button fx:id="btn02" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="2"
+											GridPane.rowIndex="1" />
+										<Button fx:id="btn03" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="3"
+											GridPane.rowIndex="1" />
+										<Button fx:id="btn04" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="4"
+											GridPane.rowIndex="1" />
+										<Button fx:id="btn05" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="5"
+											GridPane.rowIndex="1" />
+										<Button fx:id="btn06" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="6"
+											GridPane.rowIndex="1" />
+										<Button fx:id="btn07" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.rowIndex="2" />
+										<Button fx:id="btn08" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="1"
+											GridPane.rowIndex="2" />
+										<Button fx:id="btn09" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="2"
+											GridPane.rowIndex="2" />
+										<Button fx:id="btn10" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="3"
+											GridPane.rowIndex="2" />
+										<Button fx:id="btn11" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="4"
+											GridPane.rowIndex="2" />
+										<Button fx:id="btn12" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="5"
+											GridPane.rowIndex="2" />
+										<Button fx:id="btn13" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="6"
+											GridPane.rowIndex="2" />
+										<Button fx:id="btn14" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.rowIndex="3" />
+										<Button fx:id="btn15" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="1"
+											GridPane.rowIndex="3" />
+										<Button fx:id="btn16" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="2"
+											GridPane.rowIndex="3" />
+										<Button fx:id="btn17" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="3"
+											GridPane.rowIndex="3" />
+										<Button fx:id="btn18" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="4"
+											GridPane.rowIndex="3" />
+										<Button fx:id="btn19" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="5"
+											GridPane.rowIndex="3" />
+										<Button fx:id="btn20" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="6"
+											GridPane.rowIndex="3" />
+										<Button fx:id="btn21" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.rowIndex="4" />
+										<Button fx:id="btn22" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="1"
+											GridPane.rowIndex="4" />
+										<Button fx:id="btn23" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="2"
+											GridPane.rowIndex="4" />
+										<Button fx:id="btn24" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="3"
+											GridPane.rowIndex="4" />
+										<Button fx:id="btn25" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="4"
+											GridPane.rowIndex="4" />
+										<Button fx:id="btn26" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="5"
+											GridPane.rowIndex="4" />
+										<Button fx:id="btn27" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="6"
+											GridPane.rowIndex="4" />
+										<Button fx:id="btn28" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.rowIndex="5" />
+										<Button fx:id="btn29" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="1"
+											GridPane.rowIndex="5" />
+										<Button fx:id="btn30" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="2"
+											GridPane.rowIndex="5" />
+										<Button fx:id="btn31" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="3"
+											GridPane.rowIndex="5" />
+										<Button fx:id="btn32" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="4"
+											GridPane.rowIndex="5" />
+										<Button fx:id="btn33" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="5"
+											GridPane.rowIndex="5" />
+										<Button fx:id="btn34" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="6"
+											GridPane.rowIndex="5" />
+										<Button fx:id="btn35" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.rowIndex="6" />
+										<Button fx:id="btn36" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="1"
+											GridPane.rowIndex="6" />
+										<Button fx:id="btn37" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="2"
+											GridPane.rowIndex="6" />
+										<Button fx:id="btn38" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="3"
+											GridPane.rowIndex="6" />
+										<Button fx:id="btn39" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="4"
+											GridPane.rowIndex="6" />
+										<Button fx:id="btn40" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="5"
+											GridPane.rowIndex="6" />
+										<Button fx:id="btn41" mnemonicParsing="false"
+											prefWidth="55.0" GridPane.columnIndex="6"
+											GridPane.rowIndex="6" />
+									</children>
+								</GridPane>
+								<TextField fx:id="dTxtMonth" layoutX="141.0"
+									layoutY="50.0" prefHeight="36.0" prefWidth="154.0" />
+								<Button fx:id="dBtnWrite" layoutX="360.0" layoutY="50.0"
+									mnemonicParsing="false">
+									<graphic>
+										<ImageView fitHeight="26.0" fitWidth="27.0"
+											pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../images/pen-128.png" />
+											</image>
+										</ImageView>
+									</graphic>
+								</Button>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>
